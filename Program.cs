@@ -65,7 +65,14 @@ namespace SnoValleyConverter
 
                 if (qfxPath != null)
                 {
-                    Process.Start(qfxPath);
+                    if (Process.Start(qfxPath) == null)
+                    {
+                        Console.WriteLine("Unable to find and launch Quicken");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Unable to convert OFX to QFX.");
                 }
             }
         }
