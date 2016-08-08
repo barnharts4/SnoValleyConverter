@@ -50,6 +50,8 @@ namespace SnoValleyConverter
             return qfxFile;
         }
 
+        // Add a comment to for DID002
+
         static void Main(string[] args)
         {
             if (args.Length != 1)
